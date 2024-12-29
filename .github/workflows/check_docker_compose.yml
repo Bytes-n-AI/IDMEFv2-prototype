@@ -18,7 +18,7 @@ jobs:
 
       - name: Instlal docker compose
         run: |
-          apt install -y docker-compose
+          sudo apt-get install -y docker-compose
 
       - name: Check docker compose file
         run: |
