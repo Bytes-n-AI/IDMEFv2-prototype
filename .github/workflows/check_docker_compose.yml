@@ -16,6 +16,10 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v4
 
+      - name: Instlal docker compose
+        run: |
+          apt install -y docker-compose
+
       - name: Check docker compose file
         run: |
           docker-compose -f docker-compose.yml config --quiet
